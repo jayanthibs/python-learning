@@ -89,3 +89,15 @@ def calculate_area(width, height):
 # Store the returned value
 room_area = calculate_area(10, 12)
 print(f"Room size: {room_area} sq ft")  # Room size: 120 sq ft
+
+
+#multiple return
+
+def simple_function():
+    numbers = [1, 2, 3, 4, 5]
+    first_number = numbers[0]
+    last_number = numbers[-1]
+    return first_number, last_number
+
+first_number, last_number = simple_function()
+print(first_number, last_number)
